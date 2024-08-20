@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="esAR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="preguntas" id="preguntas">
+        <p class="preguntas2">¿Cuál es tu nombre?</p>
+        <textarea class="nombre" id="nombre"></textarea>
+        <p class="preguntas2">¿Cuántos años tienes?</p>
+        <textarea class="edad" id="edad"></textarea>
+        <p class="preguntas2">¿Qué lenguaje de programación estás estudiando?</p>
+        <textarea class="lenguaje" id="lenguaje"></textarea>
+        
+        <label for="toggle" id="label__toggle"><img class="enviar" src="./assets/enviar.png" alt="Enviar" /></label>
+        <input type="checkbox" id="toggle" style="display:none;"> 
+    </div>
+    
+    <div class="resultado" id="resultado" style="display:none;">
+        <p class="resultado-texto"></p>
+        <label for="nuevoCuadro" id="label__nuevo"><img class="enviar" src="./assets/enviar.png" alt="Nuevo" /></label>
+        <input type="checkbox" id="nuevoCuadro" style="display:none;">
+    </div>
+    
+    <div class="nuevo-cuadro" id="nuevo-cuadro" style="display:none;">
+        <p class="preguntas2" id="nueva-pregunta-texto"></p>
+        <textarea class="nueva-pregunta" id="nueva-pregunta"></textarea>
+        <label for="nuevoCuadro2" id="label__nuevo2"><img class="enviar" src="./assets/enviar.png" alt="Enviar respuesta" /></label>
+        <input type="checkbox" id="nuevoCuadro2" style="display:none;">
+    </div>
+    
+    <div class="mensaje" id="mensaje" style="display:none;">
+        <p id="mensaje-texto"></p>
+            <button id="volver-a-pregunta">Volver a preguntar</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
